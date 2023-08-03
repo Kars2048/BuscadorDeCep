@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Cep</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/02d48753d1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="imagens">
+        <img src="imagens/Como-se-llaman-los-fantasmas-del-pacman.jpg" width="300">
+        <img src="imagens/Como-se-llaman-los-fantasmas-del-pacman.jpg" width="300">
+    </div>
+    <div id="container">
+        <h1>Buscar Cep</h1>
+        <form>
+            <input type="search" id="buscadorTextArea" placeholder="Digite aqui">
+            <label for="buscadorTextArea">
+                <button id="buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </label>
+        </form>
+    
+        <!-- Elemento de loading (inicialmente oculto) -->
+        <div id="loadingCep" class="pac-man" style="display: none;"></div>
+    
+        <!-- Resultado (inicialmente oculto) -->
+        <div id="enderecoCep" style="display: none;">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
